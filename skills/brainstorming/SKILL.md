@@ -47,9 +47,17 @@ override it:
   depend on. Follow the full process: questions, approaches, sectioned
   design, written spec, then the writing-plans skill.
 
-When in doubt between two paths, take the heavier one. The ratchet is
-one-way: hidden complexity discovered mid-task upgrades the path —
-stop, say so, and step up. Nothing downgrades mid-task.
+When in doubt between two paths, take the lighter one and name out loud
+what would make you upgrade. The ratchet still runs one way: hidden
+complexity discovered mid-task upgrades the path — stop, say so, and
+step up. Nothing downgrades mid-task.
+
+Starting light and upgrading once costs a few minutes. Starting heavy
+costs a spec document, a plan document, and a full review chain that
+nobody needed — and unlike a missing spec, that waste is invisible,
+because the process still produces a correct result. Both errors are
+real; the heavy one is just quieter. Classify on what the repo actually
+contains, not on how consequential the request feels.
 
 ## Anti-Pattern: "Too Simple To Need Approval"
 
@@ -65,7 +73,8 @@ artifact, never the approval.
 | Thought | Reality |
 |---------|---------|
 | "This is too simple to need a design" | Simple means a short design, not no design. Two sentences in chat, then approval. |
-| "I'll call it bounded and skip the spec" | Reaching for a label to skip work IS the doubt — take the heavier path. |
+| "I'll call it architectural to be safe" | "To be safe" is not a classification. Architectural means new subsystems or changed interfaces others depend on — if the flow you're changing is already in this repo, it's bounded. |
+| "I'll call it bounded so I can start coding now" | The label changes the artifact, never the gate. Bounded still means present a design and STOP until you hear yes. |
 | "It's bounded and the design is obvious — I'll start while they read it" | The gate is the approval, not the design's length. Present, then stop until you hear yes. |
 | "I understand this kind of app, so it's bounded" | Bounded measures the repo, not your familiarity. A new project has no existing flow — it is architectural. |
 | "The spike works, so I'll keep the code" | A spike's output is an answer. Keeping the code is a new request — classify it. |
