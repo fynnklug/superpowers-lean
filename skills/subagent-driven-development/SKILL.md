@@ -52,10 +52,11 @@ the agent already has.
 | Whole-branch review | `superpowers:code-reviewer` | once, at the end |
 
 Each agent's model and reasoning effort are set in its definition — do NOT
-pass a `model` at dispatch. The tiers are deliberate: implementers and task
-reviewers run cheap because a well-specified task is mostly transcription plus
-testing, and the final review runs expensive because it is the one that must
-catch what everything else missed.
+pass a `model` at dispatch. Every agent reasons at full effort; the model tier
+is what varies. Implementers and task reviewers run on the mid tier because a
+well-specified task is bounded work against a brief, and the final review runs
+on the top tier because it is the one that must catch what everything else
+missed.
 
 Override the model only in the two cases this skill names: fix-round
 escalation, and a task-review diff whose risk genuinely warrants it. Ledger

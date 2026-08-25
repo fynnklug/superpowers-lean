@@ -2,7 +2,7 @@
 name: doc-reviewer
 description: Reviews a spec or implementation-plan document for completeness, internal consistency, ambiguity and scope before it is handed to implementers. Reads documents only, writes nothing.
 model: sonnet
-effort: low
+effort: high
 tools: Read, Grep, Glob
 ---
 

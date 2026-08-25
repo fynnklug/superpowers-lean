@@ -8,9 +8,14 @@ Fork of [obra/superpowers](https://github.com/obra/superpowers) at `v6.3.0`
 
 - **`agents/`** — the reason for the fork. Upstream ships no agent definitions,
   so every SDD dispatch named `general-purpose`, which inherits the session's
-  model *and* effort level. The Agent tool has a `model` parameter but no
-  `effort` parameter, so agent frontmatter is the only place a subagent's
-  reasoning effort can be lowered at all.
+  model *and* effort level — in practice opus at whatever the session was set
+  to, for every implementer and every reviewer.
+
+  All four agents reason at `effort: high`; the **model tier** is the lever.
+  Implementers, task reviewers and doc reviewers run `sonnet`, the final
+  whole-branch review runs `opus`. Agent frontmatter is also the only place
+  effort can be set per-agent at all — the Agent tool has a `model` parameter
+  but no `effort` parameter — so the file is the control point either way.
 - **Dispatch templates** carry only task-specific content; standing contracts
   live in the agent bodies, so the controller stops pasting them into its own
   context on every dispatch.

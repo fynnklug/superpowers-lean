@@ -2,7 +2,7 @@
 name: sdd-implementer
 description: Implements one task from an implementation plan under subagent-driven-development. Writes code and tests, commits, self-reviews, reports. Also handles fix rounds against review findings.
 model: sonnet
-effort: medium
+effort: high
 disallowedTools: Agent
 ---
 

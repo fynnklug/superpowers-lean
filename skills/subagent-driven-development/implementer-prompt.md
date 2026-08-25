@@ -4,7 +4,7 @@ Dispatch the `superpowers:sdd-implementer` agent. Its standing contract —
 self-review, escalation, TDD evidence, report format, no-subagents — lives in
 the agent definition. This prompt carries only what is specific to THIS task.
 
-Do not pass a `model`: the agent runs on a cheap tier by design. Override it
+Do not pass a `model`: the agent's tier is set in its definition. Override it
 to `opus` only for fix-round escalation (see SKILL.md, The fix loop).
 
 ```

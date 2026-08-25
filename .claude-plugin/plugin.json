@@ -1,7 +1,7 @@
 {
   "name": "superpowers",
-  "description": "Core skills library (lean fork): dedicated cheap-tier subagents for SDD, slimmed process prose",
-  "version": "6.3.0-lean.1",
+  "description": "Core skills library (lean fork): dedicated SDD subagents on mid-tier models at full effort, slimmed process prose",
+  "version": "6.3.0-lean.2",
   "author": {
     "name": "Jesse Vincent",
     "email": "jesse@fsck.com"
