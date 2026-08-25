@@ -1,9 +1,9 @@
 {
   "name": "superpowers-lean",
-  "description": "Local lean fork of the Superpowers skills library",
+  "description": "Lean fork of the Superpowers skills library (upstream: obra/superpowers by Jesse Vincent, MIT)",
   "owner": {
-    "name": "Jesse Vincent",
-    "email": "jesse@fsck.com"
+    "name": "Fynn Klug",
+    "email": "fynnklug@poeppelmann.com"
   },
   "plugins": [
     {
@@ -12,8 +12,8 @@
       "version": "6.3.0-lean.2",
       "source": "./",
       "author": {
-        "name": "Jesse Vincent",
-        "email": "jesse@fsck.com"
+        "name": "Fynn Klug",
+        "email": "fynnklug@poeppelmann.com"
       }
     }
   ]
