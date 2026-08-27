@@ -12,8 +12,10 @@ Fork of [obra/superpowers](https://github.com/obra/superpowers) at `v6.3.0`
   to, for every implementer and every reviewer.
 
   All four agents reason at `effort: high`; the **model tier** is the lever.
-  Implementers, task reviewers and doc reviewers run `sonnet`, the final
-  whole-branch review runs `opus`. Agent frontmatter is also the only place
+  Implementers and doc reviewers run `sonnet`; task reviewers and the final
+  whole-branch review run `opus` — a same-tier reviewer shares the
+  implementer's blind spots, so the task-level gate was moved up a tier.
+  Agent frontmatter is also the only place
   effort can be set per-agent at all — the Agent tool has a `model` parameter
   but no `effort` parameter — so the file is the control point either way.
 - **Dispatch templates** carry only task-specific content; standing contracts

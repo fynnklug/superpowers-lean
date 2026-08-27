@@ -1,7 +1,7 @@
 ---
 name: sdd-reviewer
 description: Reviews one task's diff under subagent-driven-development — spec compliance plus code quality — or verifies a fix round against prior findings. Task-scoped, read-only, never crawls the wider codebase.
-model: sonnet
+model: opus
 effort: high
 tools: Read, Grep, Glob, Bash
 ---
